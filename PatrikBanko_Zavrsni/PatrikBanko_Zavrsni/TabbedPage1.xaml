@@ -1,0 +1,19 @@
+﻿<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            Title="LanGuide"
+             x:Class="PatrikBanko_Zavrsni.TabbedPage1"
+            xmlns:local="clr-namespace:PatrikBanko_Zavrsni">
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="Teal" />
+                <Setter Property="Shell.ForegroundColor" Value="Orange" />
+            </Style>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
+    <local:MainPage Title="Home" Icon="icons8_home_96.png"/>
+    <local:UserPage Title="User" Icon="icons8_users_64.png"/>
+    <local:ResultPage Title="Result" Icon="icons8_result_64.png" />
+    <local:LanguagePage Title="Languages" Icon="icons8_language_96.png" />
+</TabbedPage>

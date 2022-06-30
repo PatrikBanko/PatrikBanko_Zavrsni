@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PatrikBanko_Zavrsni.LanguagePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#029788" Padding="24" CornerRadius="0">
+                <Label Text="Languages" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <Frame>
+                <Button Text="Sortiranje silazno" Clicked="Button_Clicked"/>
+            </Frame>
+            <Frame>
+                <Button Text="Sortiranje uzlazno" Clicked="Button_Clicked1"/>
+            </Frame>
+            <ListView x:Name="testListView" Margin="20" RowHeight="50">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding language}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

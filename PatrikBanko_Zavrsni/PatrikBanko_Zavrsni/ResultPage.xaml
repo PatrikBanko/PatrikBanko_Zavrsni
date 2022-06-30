@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PatrikBanko_Zavrsni.ResultPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#029788" Padding="24" CornerRadius="0">
+                <Label Text="Results" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <Frame>
+                <Button Text="Uzlazno sortiranje" Clicked="Button_Clicked_Asc"/>
+            </Frame>
+            <Frame>
+                <Button Text="Silazno sortiranje" Clicked="Button_Clicked_Desc"/>
+            </Frame>
+            <Entry x:Name="min" Keyboard="Numeric" Placeholder="Min score"/>
+            <Button Text="Filter" Clicked="Button_Clicked_Desc"/>
+            <ListView x:Name="testListView" Margin="20" RowHeight="50">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding id_user}"/>
+                                <Label Text="{Binding email}"/>
+                                <Label Text="{Binding create_time}"/>
+                                <Label Text="{Binding id_exercise}"/>
+                                <Label Text="{Binding result_percent}"/>
+                                <Label Text="{Binding result_score}"/>
+                                <Label Text="{Binding result_max}"/>
+                                <Label Text="{Binding skill}"/>
+                                <Label Text="{Binding language}"/>
+                                <Label Text="{Binding result_date}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

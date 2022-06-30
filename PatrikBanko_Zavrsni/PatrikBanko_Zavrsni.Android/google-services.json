@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940731201010",
+    "project_id": "patrikbankozavrsni",
+    "storage_bucket": "patrikbankozavrsni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940731201010:android:fa60c93d576eb1e52c276b",
+        "android_client_info": {
+          "package_name": "com.companyname.patrikbanko_zavrsni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940731201010-0ioippmh2fv8gfrkhoekoingatb182ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3fX3RVDI9vqgT0ryqR3o_uyxo7yYAjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940731201010-0ioippmh2fv8gfrkhoekoingatb182ev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

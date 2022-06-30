@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PatrikBanko_Zavrsni.UserPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#029788" Padding="25" CornerRadius="0">
+                <Label Text="Users" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <SearchBar Placeholder="Search user" TextChanged="SearchBar_TextChanged_usr"/>
+            <SearchBar Placeholder="Search email" TextChanged="SearchBar_TextChanged_email"/>
+            <Frame>
+                <Button Text="Sortirajte uzlazno" Clicked="ButtonAscending"/>
+            </Frame>
+            <Frame>
+                <Button Text="Sortirajte silazno" Clicked="ButtonDescending"/>
+            </Frame>
+            <ListView x:Name="testListView" Margin="20" RowHeight="50">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding id_user}"/>
+                                <Label Text="{Binding email}"/>
+                                <Label Text="{Binding create_time}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
