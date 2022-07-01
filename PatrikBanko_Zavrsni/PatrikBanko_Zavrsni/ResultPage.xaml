@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Frame BackgroundColor="#029788" Padding="24" CornerRadius="0">
-                <Label Text="Results" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+                <Label Text="Rezultati" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
             </Frame>
             <Frame>
                 <Button Text="Uzlazno sortiranje" Clicked="Button_Clicked_Asc"/>
