@@ -18,7 +18,7 @@
                         <Entry Placeholder="Password" IsPassword="True" FontSize="16" x:Name="EntryUserPassword"/>
                     </StackLayout>
                     <StackLayout Grid.Row="4">
-                        <Button Text="Register" WidthRequest="100" TextColor="White" BackgroundColor="#029788" Clicked="Button_Clicked"/>
+                        <Button Text="Register" WidthRequest="100" TextColor="Black" BackgroundColor="LightGray" Clicked="Button_Clicked"/>
                     </StackLayout>
                 </Grid>
             </StackLayout>

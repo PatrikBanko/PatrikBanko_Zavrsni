@@ -4,11 +4,11 @@
              x:Class="PatrikBanko_Zavrsni.MainPage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#ffffff</Color>
+            <Color x:Key="Primary">orange</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="LogOutButton" Clicked="Logout" IconImageSource="logout.png" Text="Logout"/>
+        <ToolbarItem x:Name="LogOutButton" Clicked="Logout" IconImageSource="logout1.png" Text="Logout"/>
     </ContentPage.ToolbarItems>
 
     <Grid>
@@ -28,14 +28,11 @@
                 <Frame OutlineColor="#cecece" BackgroundColor="#cecece">
                     <Label Text="Welcome to the LanGuide users and result data center" FontSize="Title" TextColor="Black"/>
                 </Frame>
-                <Frame OutlineColor="#CEE6F2" BackgroundColor="#D9EDF7">
-                    <Label Text="Browse and download data about users and their activity on the LanGuide app" FontSize="16" Padding="0,0,0,0" TextColor="Black"/>
-                </Frame>
-                <Button BackgroundColor="#029788" Text="USERS" ImageSource="users1.png" HeightRequest="100" Clicked="Button_Clicked">
+                <Button BackgroundColor="Orange" Text="USERS" ImageSource="users1.png" HeightRequest="100" Clicked="Button_Clicked">
                 </Button>
-                <Button BackgroundColor="#029788" Text="RESULT" ImageSource="test1.png" HeightRequest="100" Clicked="Button_Clicked_1">
+                <Button BackgroundColor="Orange" Text="RESULT" ImageSource="test1.png" HeightRequest="100" Clicked="Button_Clicked_1">
                 </Button>
-                <Button BackgroundColor="#029788" Text="LANGUAGES" ImageSource="language1.png" HeightRequest="100" Clicked="Button_Clicked_2">
+                <Button BackgroundColor="Orange" Text="LANGUAGES" ImageSource="language1.png" HeightRequest="100" Clicked="Button_Clicked_2">
                 </Button>
 
             </StackLayout>

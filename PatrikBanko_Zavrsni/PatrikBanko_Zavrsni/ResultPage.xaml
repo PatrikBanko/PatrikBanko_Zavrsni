@@ -4,16 +4,15 @@
              x:Class="PatrikBanko_Zavrsni.ResultPage">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#029788" Padding="24" CornerRadius="0">
-                <Label Text="Rezultati" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            <Frame BackgroundColor="Orange" Padding="25" CornerRadius="0">
+                <Label Text="Rezultati" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25"/>
             </Frame>
             <Frame>
-                <Button Text="Uzlazno sortiranje" Clicked="Button_Clicked_Asc"/>
+                <Button Text="Uzlazno sortiranje" BackgroundColor="LightGray" Clicked="Button_Clicked_Asc"/>
             </Frame>
             <Frame>
-                <Button Text="Silazno sortiranje" Clicked="Button_Clicked_Desc"/>
+                <Button Text="Silazno sortiranje" BackgroundColor="LightGray" Clicked="Button_Clicked_Desc"/>
             </Frame>
-            <Entry x:Name="min" Keyboard="Numeric" Placeholder="Min score"/>
             <Button Text="Filter" Clicked="Button_Clicked_Desc"/>
             <ListView x:Name="testListView" Margin="20" RowHeight="50">
                 <ListView.ItemTemplate>

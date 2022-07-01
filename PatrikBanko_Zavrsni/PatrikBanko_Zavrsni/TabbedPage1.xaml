@@ -12,8 +12,12 @@
             </Style>
         </ResourceDictionary>
     </TabbedPage.Resources>
-    <local:MainPage Title="Home" Icon="icons8_home_96.png"/>
-    <local:UserPage Title="User" Icon="icons8_users_64.png"/>
-    <local:ResultPage Title="Result" Icon="icons8_result_64.png" />
-    <local:LanguagePage Title="Languages" Icon="icons8_language_96.png" />
+    <!--<local:MainPage Title="Home" Icon="home1.png"/>
+    <local:UserPage Title="User" Icon="users1.png"/>
+    <local:ResultPage Title="Result" Icon="test1.png" />
+    <local:LanguagePage Title="Languages" Icon="language1.png" />-->
+    <local:MainPage Title="Home"/>
+    <local:UserPage Title="User"/>
+    <local:ResultPage Title="Result"/>
+    <local:LanguagePage Title="Languages"/>
 </TabbedPage>

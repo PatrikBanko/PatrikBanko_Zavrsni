@@ -4,17 +4,17 @@
              x:Class="PatrikBanko_Zavrsni.UserPage">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#029788" Padding="25" CornerRadius="0">
-                <Label Text="Users" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            <Frame BackgroundColor="Orange" Padding="25" CornerRadius="0">
+                <Label Text="Users" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25"/>
+            </Frame>
+            <Frame>
+                <Button Text="Sortirajte uzlazno" BackgroundColor="LightGray" Clicked="ButtonAscending"/>
+            </Frame>
+            <Frame>
+                <Button Text="Sortirajte silazno" BackgroundColor="LightGray" Clicked="ButtonDescending"/>
             </Frame>
             <SearchBar Placeholder="Search user" TextChanged="SearchBar_TextChanged_usr"/>
             <SearchBar Placeholder="Search email" TextChanged="SearchBar_TextChanged_email"/>
-            <Frame>
-                <Button Text="Sortirajte uzlazno" Clicked="ButtonAscending"/>
-            </Frame>
-            <Frame>
-                <Button Text="Sortirajte silazno" Clicked="ButtonDescending"/>
-            </Frame>
             <ListView x:Name="testListView" Margin="20" RowHeight="50">
                 <ListView.ItemTemplate>
                     <DataTemplate>
